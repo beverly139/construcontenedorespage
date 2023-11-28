@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos para el encabezado */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #FFE600;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+body{
+font-family:  sans-serif;
+margin: 0;
+background-color: #F5F5F5;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+a:hover{
+    color:#0C96B8;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    height: 90px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+nav a:hover{
+    color: #0C96B8;
+}
+section {
+    margin: 20px;
+    padding: 10px;
+}
+main {
+    flex: 1;
+}
+
+.footer{
+width: 100%;
+background-color: black;
+color: white;
+}
+
+.footer .grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 50px;
+padding: 45px 0px;
+}
+
+.footer .grupo-1 .box h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 30px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    
+}
+.footer .grupo-1 .box p{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.social-media-icons-white {
+    display: flex;
+    justify-content: space-around;
+}
+.social-media-icons-white a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .social-media-icons-white a:hover{
+    color: aqua;
+  }
+
+.footer .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.icons{
+    color:#0C96B8;
+   
+}
+
+.icons .grupo-icons{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.icons .grupo-icons p{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.info .grupo-info{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 20px;
+    padding: 60px 100px;
+
+}
+.info img{
+    height: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -200px;
+
+}
+.info .grupo-info p{
+    margin-top: -80px;
+    margin-left: 100px;
+}
+.info .grupo-info .texto3{
+    margin-top: 40px;
+    margin-right: 100px;
+    text-align: justify;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+    margin-top: -120px;
+}
+.contenedor img{
+    width: 100%;
+    
+}
+.imagen__columna{
+    margin: 5px;
+}
+.imagen-info .contenedor{
+    display: grid;
+}
+.contenedor2{
+    width: 100%;
+    margin: auto;
+}
+.contenedor2 img{
+    width: 100%;
+    height: min-content;
+}
+.imagen__columna2{
+    margin: 5px;
+
+}
+.imagen-final .contenedor2{
+    display:grid;
+}
+.grupo-diseño{
+    margin-left: 40px;
+    line-height: 50px;
+}
+.sublista{
+    margin-left: 30px;
+}
+
+.list-title{ 
+    margin-left: 60px;
+    font-size: 15px;
+}
+.sublista2{
+    margin-left: 30px;
+}
+.list-title2{
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.listas-imagen .grupo-diseño{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 20px;
+    padding: 60px 20px;
+
+}
+.listas-imagen .grupo-diseño{
+    grid-template-columns: repeat(2,1fr);
+}
+.listas-imagen img{
+    height: 250px;
+    margin-left: 280px;
+
+}
+@media(min-width:520px){
+    .imagen-info .contenedor{
+
+        grid-template-columns: repeat(2,50%);
+    }
+} 
+@media(min-width:728px){
+    .imagen-info .contenedor{
+
+        grid-template-columns: repeat(3,33.3%);
+    }
+} 
+@media(min-width:1024px){
+    .imagen-info .contenedor{
+
+        grid-template-columns: repeat(4,25%);
+    }
+} 
+
+
+@media(min-width:520px){
+    .imagen-final .contenedor2{
+
+        grid-template-columns: repeat(2,50%);
+    }
+} 
+@media(min-width:728px){
+    .imagen-final .contenedor2{
+
+        grid-template-columns: repeat(3,33.3%);
+    }
+} 
+
+@media (max-width:700px) {
+    header{
+    flex-direction:column; 
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    footer{
+        width: 50%;
+        margin-bottom: 30px;
+        
+    }
+    section{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+} 
